@@ -303,11 +303,12 @@ h1, h2, h3 {
 }
 
 .event-icon {
-  width: 130px;              /* ~5× larger than before */
+  width: min(130px, 40vw);
+  max-width: 130px;
   height: auto;
   display: block;
-  margin: 0 auto 14px;       /* space below icon */
-
+  margin: 0 auto 14px;
+  object-fit: contain;
   filter: drop-shadow(0 10px 18px rgba(0,0,0,0.12));
 }
 

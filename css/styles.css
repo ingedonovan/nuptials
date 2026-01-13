@@ -164,6 +164,22 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Arizona Text";
+  src: url("../assets/fonts/ABCARIZONATEXT-REGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arizona Text";
+  src: url("../assets/fonts/ABCARIZONATEXT-THINITALIC.OTF") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
 p {
   line-height: 1.6;
 }
@@ -230,6 +246,91 @@ h1, h2, h3 {
 /* Keyboard accessibility */
 .enter-link:focus-visible {
   outline: none;
+}
+
+/* --- Page header (subpages) --- */
+.page-header {
+  padding: 34px 0 12px;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.back-link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: clamp(28px, 3.2vw, 40px);
+}
+
+.page-intro {
+  margin: 10px auto 0;
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+/* Center-justified text block for pages like Events */
+.page--center {
+  text-align: center;
+}
+
+/* --- Events list --- */
+.events {
+  margin: 18px auto 0;
+  max-width: 70ch;
+  display: grid;
+  gap: 26px;
+}
+
+.event {
+  padding: 0;
+}
+
+.event-title {
+  font-family: "Arizona Text", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0 0 8px;
+  font-size: clamp(20px, 2.4vw, 26px);
+}
+
+.event-icon {
+  width: 130px;              /* ~5× larger than before */
+  height: auto;
+  display: block;
+  margin: 0 auto 14px;       /* space below icon */
+
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.12));
+}
+
+.event-meta {
+  /* Arizona Thin Italic */
+  font-family: "Arizona Text", system-ui, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: rgba(29, 27, 22, 0.72);
+}
+
+.event-body {
+  /* Arizona Light */
+  font-family: "Arizona Text", system-ui, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  margin: 0 auto;
+  max-width: 62ch;
+  color: var(--ink);
 }
 
 
@@ -417,7 +518,7 @@ body {
 .welcome-subtitle {
   margin: 0 0 2lh;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 

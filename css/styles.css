@@ -140,13 +140,13 @@ body {
   padding: 28px 0 10px;
 }
 
-@font-face {
-  font-family: "Colonna";
-  src: url("../assets/fonts/COLONNA.TTF") format("truetype");
+/* @font-face {
+  font-family: "Pecita";
+  src: url("../assets/fonts/Pecita.otf") format("truetype");
   font-weight: 00;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "Arizona Text";
@@ -211,7 +211,7 @@ h1, h2, h3 {
 .enter-link {
   position: relative;
   margin-top: 0;        /* spacing now comes from subtitle */
-  font-size: 16px;
+  font-size: 14px;
   color: var(--ink);
   cursor: pointer;
   letter-spacing: 0.02em;
@@ -512,21 +512,21 @@ body {
 
 
 .welcome-title {
-  font-family: "Colonna", serif;
+  font-family: "Arizona Text", serif;
   letter-spacing: 0.08em;
+  font-size: 40px;
 }
 
 .welcome-subtitle {
   margin: 0 0 2lh;
   color: var(--muted);
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
 .welcome-hint {
   margin-top: 6px;
   font-size: 13px;
-  color: rgba(29, 27, 22, 0.55);
 }
 
 
